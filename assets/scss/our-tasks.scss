@@ -1,0 +1,80 @@
+@import "config.scss";
+.our-tasks {
+	background-image: url("../img/features-bcg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-top: 180px;
+
+	& > .container {
+		display: flex;
+	}
+	&__title {
+		font-size: 36px;
+		font-weight: 600;
+		color: #242f51;
+	}
+	&__subtitle {
+		margin-top: 10px;
+	}
+	&__list {
+		width: 50%;
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 80px;
+		row-gap: 50px;
+	}
+	&__img {
+		margin-right: -300px;
+	}
+	&__button {
+		margin-top: 40px;
+	}
+	.item-our-tasks {
+
+		&__title {
+			margin-top: 20px;
+		}
+		&__subtitle {
+			margin-top: 10px;
+
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.our-tasks {
+		padding: 0 40px;
+		background-image: none;
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__list {
+			width: 100%;
+		}
+	}
+	.item-our-tasks {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__title {
+			text-align: center;
+		}
+		&__subtitle {
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 768px) {
+
+	.our-tasks {
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
+	}
+}

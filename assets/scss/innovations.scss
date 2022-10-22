@@ -1,0 +1,57 @@
+@import "config";
+.innovations {
+	margin-top: 120px;
+
+	& > .container {
+		display: flex;
+	}
+	&__img {
+		margin-left: -80px;
+	}
+	&__info {
+		margin-left: 120px;
+		padding-top: 80px;
+	}
+	&__title {
+		max-width: 360px;
+		font-size: rem(36);
+		font-weight: 600;
+		color: #242F51;
+	}
+	&__subtitle {
+		margin-top: 30px;
+		color: #616368;
+	}
+	&__button {
+		margin-top: 40px;
+	}
+}
+@media (max-width: 1200px) {
+
+	.innovations {
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-left: 0;
+			padding: 0 40px;
+		}
+		&__title {
+			max-width: none;
+			text-align: center;
+		}
+		&__subtitle {
+			max-width: none;
+			text-align: center;
+		}
+		&__img {
+			display: none;
+		}
+	}
+}
+@media (max-width: 576px) {
+
+	.innovations__info {
+		padding: 0;
+	}
+}

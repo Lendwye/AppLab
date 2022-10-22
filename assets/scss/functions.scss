@@ -1,0 +1,18 @@
+@use 'sass:math';
+@function percent($pxFir, $pxSec)
+{
+	$result: math.div($pxFir, $pxSec) * 100%;
+	@return $result;
+}
+
+@function rem($rem)
+{
+	$result: math.div($rem, 16) + rem;
+	@return $result;
+}
+
+@function em($em) 
+{
+	$result: math.div($em, 16) + em;
+	@return $result;
+} 

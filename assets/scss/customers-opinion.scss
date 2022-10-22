@@ -1,0 +1,102 @@
+@import "config";
+.customers-opinion {
+	margin-top: 250px;
+	background-image: url('../img/clients-bcg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+	& > .container {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__title {
+		font-size: rem(40);
+		font-weight: 600;
+		color: #242f51;
+	}
+	&__subtitle {
+		margin-top: 30px;
+		color: #616368;
+	}
+	&__info {
+		max-width: 600px;
+	}
+	&__comments {
+		margin-top: 35px;
+	}
+	.comment-customers-opinion {
+		
+		&__title {
+			margin-top: 20px;
+			font-size: rem(20);
+			font-weight: 600;
+			color: #242f51;
+		}
+		&__description {
+			margin-top: 30px;
+			color: #616368;
+		}
+		&__author {
+			margin-top: 50px;
+		}
+	}
+}
+@media (max-width: 1200px) {
+
+	.customers-opinion {
+		background-image: none;
+		padding: 0 40px;
+
+		&__title {
+			text-align: center;
+		}
+		&__subtitle {
+			text-align: center;
+		}
+		& > .container {
+			justify-content: center;
+		}
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 700px;
+		}
+	}
+}
+@media (max-width: 768px) {
+
+	.customers-opinion {
+
+		&__info {
+			max-width: 100%;
+		}
+		&__title {
+			max-width: 500px;
+		}
+		&__subtitle {
+			max-width: 500px;
+		}
+	}
+	.comment-customers-opinion {
+
+		&__rating {
+			display: flex;
+			justify-content: center;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__description {
+			text-align: left;
+			height: 120px;
+			overflow: auto;
+		}
+	}
+	.author-customers-opinion {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+	}
+}

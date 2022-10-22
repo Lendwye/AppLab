@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import "functions";
+@import "fonts";
+@import "header";
+@import "intro";
+@import "companies";
+@import "features";
+@import "jackpots";
+@import "innovations";
+@import "advantages";
+@import "our-tasks";
+@import "subscription";
+@import "customers-opinion";
+@import "FAQ";
+@import "download";
+@import "footer";
+@import "config";
+*{
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	border: unset;
+	box-sizing: border-box;
+}
+ul, ol {
+	padding: 0;
+	list-style: none;
+}
+body.isLocked {
+	overflow: hidden;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.button_usual {
+	display: inline-flex;
+	height: 57px;
+	padding: 0 45px;
+	border-radius: 50px;
+	background-color: $darkBlue;
+	color: #fff;
+	font-weight: 700;
+	font-size: rem(16);
+	text-decoration: none;
+	align-items: center;
+
+	&:hover {
+		box-shadow: 0 0 20px rgba(68, 0, 255, 0.4)
+	}
+	&-unactive {
+		color: #898A8E;
+		background-color: transparent;
+	}
+}
+.swiper {
+	width: 100%;
+	min-height: 420px;
+
+	&__navigation-customers-opinion {
+		width: 120px;
+		height: 50px;
+		top: 70%;
+		left: 80%;
+		position: absolute;
+	}
+	&-button-prev-customers-opinion {
+		position: static;
+	}
+	&-button-next-customers-opinion {
+		position: static;
+	}
+}
+@media (max-width:768px) {
+	.swiper {
+		padding-bottom: 40px;
+		width: 80%;
+		min-height: 420px;
+		
+		&__navigation-customers-opinion {
+			top: 90%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			z-index: 10;
+		}
+	}
+}

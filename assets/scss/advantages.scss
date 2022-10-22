@@ -1,0 +1,71 @@
+@import "config";
+.advantages {
+	margin-top: 200px;
+
+	& > .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		text-align: center;
+		max-width: 440px;
+		font-size: rem(36);
+		font-weight: 600;
+		color: #242f51;
+	}
+	&__subtitle {
+		margin-top: 20px;
+		text-align: center;
+		max-width: 640px;
+	}
+	&__list {
+		margin-top: 80px;
+		width: 100%;
+		display: grid;
+		justify-items: space-between;
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 60px;
+	}
+	.item-advantage {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+		&__icon {
+
+		}
+		&__title {
+			margin-top: 20px;
+			font-size: rem(20);
+			font-weight: 600;
+			color: #242f51;
+			max-width: 250px;
+			text-align: center;
+		}
+		&__subtitle {
+			margin-top: 5px;
+			max-width: 280px;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 1200px) {
+
+	.advantages {
+
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+@media (max-width: 768px) {
+
+	.advantages {
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
+	}
+}

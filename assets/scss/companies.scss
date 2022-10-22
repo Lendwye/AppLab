@@ -1,0 +1,35 @@
+@import "config";
+.companies {
+	min-height: 360px;
+
+	& > .container {
+		padding: 100px 0;
+	}
+	&__title {
+		color: #1F2946;
+		text-align: center;
+		font-size: rem(18);
+		margin-bottom: 40px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		justify-items: center;
+	}
+}
+@media (max-width: 1200px) {
+
+	.companies__title {
+		font-size: rem(22);
+	}
+	.companies__list {
+		row-gap: 40px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 768px) {
+
+	.companies__list {
+		grid-template-columns: 1fr;
+	}
+}
